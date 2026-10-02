@@ -1,0 +1,69 @@
+{
+  "name": "hermes-knowledge",
+  "version": "1.0.0",
+  "description": "Comprehensive Hermes Agent (Nous Research) knowledge base with 21 reference files covering CLI commands, configuration, toolsets, gateway platforms, skills system, memory, scheduling, subagents, security, VPS operations, troubleshooting, and cost optimization.",
+  "author": "hermes-forge build",
+  "license": "MIT",
+  "tags": ["hermes-agent", "nous-research", "documentation", "reference", "cli", "automation", "ai-agents"],
+  "platforms": ["linux", "macos"],
+  "metadata": {
+    "hermes_version_documented": "v0.21.5 (tag v2026.9.24)",
+    "research_date": "2026-10-02",
+    "reference_files": 21,
+    "total_size_kb": 380
+  },
+  "agents": {
+    "hermes-expert": {
+      "description": "General Hermes Agent expert. Answers any question about Hermes Agent using the comprehensive reference knowledge base.",
+      "model": "sonnet",
+      "references": ["references/01-foundations-architecture.md", "references/02-install-vps-config-basics.md", "references/03-providers-and-models.md", "references/04-cli-command-reference-a.md", "references/04-cli-command-reference-b.md", "references/05-slash-commands-sessions-interactive.md", "references/06-config-keys-and-env-vars.md", "references/07-tools-and-toolsets.md", "references/08-terminal-backends.md", "references/09-messaging-gateway.md", "references/10-mcp-plugins-api.md", "references/11-skills-system.md", "references/12-memory-and-context.md", "references/13-scheduling-and-automation.md", "references/14-subagents-and-delegation.md", "references/15-learning-loop-and-advanced.md", "references/16-security-and-hardening.md", "references/17-vps-operations.md", "references/18-troubleshooting.md", "references/19-cost-and-optimization.md", "references/20-use-case-catalog.md", "references/21-glossary.md", "references/22-unverified-and-gaps.md", "references/23-sources.md"]
+    },
+    "hermes-mission-planner": {
+      "description": "Generates complete Hermes Agent mission briefs from raw tasks with skills, commands, toolsets, config, scheduling, delegation, delivery, safety, model recommendations, and paste-ready prompts.",
+      "model": "sonnet",
+      "references": ["references/00-index-and-routing.md", "references/01-foundations-architecture.md", "references/02-install-vps-config-basics.md", "references/03-providers-and-models.md", "references/04-cli-command-reference-a.md", "references/04-cli-command-reference-b.md", "references/05-slash-commands-sessions-interactive.md", "references/06-config-keys-and-env-vars.md", "references/07-tools-and-toolsets.md", "references/08-terminal-backends.md", "references/09-messaging-gateway.md", "references/10-mcp-plugins-api.md", "references/11-skills-system.md", "references/12-memory-and-context.md", "references/13-scheduling-and-automation.md", "references/14-subagents-and-delegation.md", "references/15-learning-loop-and-advanced.md", "references/16-security-and-hardening.md", "references/17-vps-operations.md", "references/18-troubleshooting.md", "references/19-cost-and-optimization.md", "references/20-use-case-catalog.md", "references/21-glossary.md", "references/22-unverified-and-gaps.md"]
+    },
+    "hermes-troubleshooter": {
+      "description": "Diagnoses Hermes Agent errors using comprehensive troubleshooting reference covering 25+ verified errors, doctor command, log analysis, database repair, gateway issues, config migration, and recovery procedures.",
+      "model": "sonnet",
+      "references": ["references/18-troubleshooting.md", "references/04-cli-command-reference-a.md", "references/06-config-keys-and-env-vars.md", "references/08-terminal-backends.md", "references/09-messaging-gateway.md", "references/13-scheduling-and-automation.md", "references/17-vps-operations.md", "references/22-unverified-and-gaps.md"]
+    },
+    "hermes-cost-optimizer": {
+      "description": "Provides cost optimization strategies covering model routing, auxiliary models, budget monitoring, free tier usage, provider comparison, and cost-effective scheduling patterns.",
+      "model": "sonnet",
+      "references": ["references/19-cost-and-optimization.md", "references/03-providers-and-models.md", "references/04-cli-command-reference-a.md", "references/06-config-keys-and-env-vars.md", "references/13-scheduling-and-automation.md", "references/20-use-case-catalog.md", "references/22-unverified-and-gaps.md"]
+    },
+    "hermes-security-auditor": {
+      "description": "Performs security hardening audits covering approval modes, sandboxing, allowlists, secret handling, supply chain, network egress, gateway security, and VPS hardening.",
+      "model": "sonnet",
+      "references": ["references/16-security-and-hardening.md", "references/05-slash-commands-sessions-interactive.md", "references/06-config-keys-and-env-vars.md", "references/08-terminal-backends.md", "references/09-messaging-gateway.md", "references/10-mcp-plugins-api.md", "references/11-skills-system.md", "references/13-scheduling-and-automation.md", "references/17-vps-operations.md", "references/22-unverified-and-gaps.md"]
+    }
+  },
+  "references": {
+    "00-index-and-routing.md": "Intent → file mapping, trigger patterns for 11 domains",
+    "01-foundations-architecture.md": "Identity, architecture, repo structure, diagrams",
+    "02-install-vps-config-basics.md": "8 install methods, VPS walkthrough, Docker, hardening",
+    "03-providers-and-models.md": "~40 providers, switching, fallback, local VPS models",
+    "04-cli-command-reference-a.md": "12 core command families, ~70 commands",
+    "04-cli-command-reference-b.md": "Remaining CLI families",
+    "05-slash-commands-sessions-interactive.md": "55+ slash commands, approvals, personalities",
+    "06-config-keys-and-env-vars.md": "~110 config keys, ~60 env vars, precedence",
+    "07-tools-and-toolsets.md": "100+ tools, 30+ toolsets, 4 presets, 28 platform toolsets",
+    "08-terminal-backends.md": "7 backends, decision table, file transfer, hardening",
+    "09-messaging-gateway.md": "28 platforms, pairing, allowlists, webhooks, Bot Mode",
+    "10-mcp-plugins-api.md": "MCP client/server, 14 servers, plugins, API, ACP",
+    "11-skills-system.md": "SKILL.md format, 58 bundled, ~200 optional, curator",
+    "12-memory-and-context.md": "Memory layers, 9 providers, 5 priority levels, 14 personalities",
+    "13-scheduling-and-automation.md": "Cron mechanics, 5 formats, 25 recipes, job chaining",
+    "14-subagents-and-delegation.md": "delegate_task, orchestrator, Kanban, Bot Mode, A2A",
+    "15-learning-loop-and-advanced.md": "Goals, checkpoints, MoA, 30-day path, 30 patterns",
+    "16-security-and-hardening.md": "Approvals, sandbox, Tirith, allowlists, secrets, supply chain",
+    "17-vps-operations.md": "Hardening, monitoring, log rotation, backup, migration",
+    "18-troubleshooting.md": "25+ errors, doctor, logs, DB repair, recovery",
+    "19-cost-and-optimization.md": "Cost levers, routing, auxiliary models, budgets",
+    "20-use-case-catalog.md": "80+ cataloged tasks with brief outlines",
+    "21-glossary.md": "500+ terms with definitions",
+    "22-unverified-and-gaps.md": "30 unverified items with resolution paths",
+    "23-sources.md": "Master source list from all research phases"
+  }
+}
